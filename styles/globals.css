@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: #09050f;
+  --color: #f5f5f5;
+  --scrollarColor: #f5f5f591;
+}
+
+body {
+  color: var(--color);
+  background: var(--foreground-color);
+}
+body::-webkit-scrollbar {
+  width: 15px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--scrollarColor);
+  border-radius: 12px;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.081);
+}
+.navlinks{
+  background:rgba(255, 255, 255, 0.081);
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
