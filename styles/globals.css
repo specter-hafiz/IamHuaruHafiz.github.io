@@ -6,6 +6,7 @@
   --foreground-color: #09050f;
   --color: #f5f5f5;
   --scrollarColor: #f5f5f591;
+  --ds-page-width: 1400px; 
 }
 
 body {
@@ -21,13 +22,24 @@ body::-webkit-scrollbar-thumb {
   background: var(--scrollarColor);
   border-radius: 12px;
 }
+
+nav{
+  max-width: var(--ds-page-width);
+}
 .navbar {
   background: rgba(255, 255, 255, 0.081);
-}
-.navlinks{
-  background:rgba(255, 255, 255, 0.081);
+
 }
 
+
+.navlinks{
+  background:rgba(255, 255, 255, 0.081);
+
+}
+
+.box{
+  background:rgba(255, 255, 255, .02);
+}
 
 
 @layer utilities {
@@ -36,3 +48,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media  screen  and (max-width:640px){
+  #small_device{
+    display: block;
+  }
+}

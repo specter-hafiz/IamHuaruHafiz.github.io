@@ -42,7 +42,7 @@ export default function Nav() {
 
   
   return (
-  <>
+  <nav className="w-full mx-auto ">
      <div className="w-full flex  p-4 justify-end ">
         <div onClick={()=>setIsClose(!IsClose)}  className="size-14 p-2  navbar rounded-full flex items-center justify-center cursor-pointer fixed z-[99]">
           <div className="flex flex-col items-end gap-2 menu">
@@ -51,11 +51,11 @@ export default function Nav() {
           </div>
         </div>
     </div>
-    <div className="navlinks w-full navbar fixed z-[50] top-0  px-10 backdrop-blur-[40px]">
-      <ul className="w-full">
+    <div className="navlinks w-screen navbar fixed z-[50] top-0 left-0 right-0 px-10 backdrop-blur-[40px]">
+      <ul className="w-full 2xl:max-w-screen-xl mx-auto pt-24 px-4 lg:px-10">
         <li>Hello</li>
       </ul>
     </div>
-  </>
+  </nav>
   )
 }
