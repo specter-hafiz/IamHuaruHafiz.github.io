@@ -6,17 +6,17 @@ export default function Info() {
     const social:Array<{name:string,link:string,icon:string}> = [
         {
             name:'twitter',
-            link:'',
+            link:'https://x.com/_HuaruHafiz/',
             icon:"/icons/twitter.svg"
         },
         {
             name:'linkedin',
-            link:'',
+            link:'https://www.linkedin.com/in/hafiz-huaru-/',
             icon:"/icons/linkedin.svg"
         },
         {
             name:'github',
-            link:'',
+            link:'https://github.com/IamHuaruHafiz',
             icon:"/icons/github.svg"
         }
 
@@ -51,7 +51,7 @@ export default function Info() {
         </div>
       </div>
       <div className="w-full mt-5 md:mt-8 ">
-        <h1 className="text-[2rem] md:text-[2.4rem] lg:text-[3rem] leading-tight  font-[500]">Driven by passion, crafting <br className="sm:block hidden"/> marvels
+        <h1 className="text-[2rem] md:text-[2.4rem] lg:text-[3rem] leading-tight  font-[500] hero-text">Driven by passion, crafting <br className="sm:block hidden"/> marvels
         <br id="small_device" className="hidden"/> in technology.</h1>
         <p className="my-6 text-md md:text-[1.2rem] font-[500] text-white/50">I enjoy learning new things and try to overcome new <br className="md:block hidden"/> challenges while analyzing how improved through them.</p>
       </div>
