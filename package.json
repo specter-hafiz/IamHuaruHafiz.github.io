@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cypress:open":"cypress"
+    "cypress:open":"cypress open"
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
