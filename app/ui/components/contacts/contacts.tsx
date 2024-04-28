@@ -21,6 +21,15 @@ export default function Contacts() {
       y: 0,
       duration: 0.5,
     });
+
+    gsap.to('.contact-relax',{
+      y:30,
+      repeat:-1,
+      yoyo:true,
+      delay:0.3,
+      duration:7,
+    })
+
   });
 
   return (
@@ -112,7 +121,7 @@ export default function Contacts() {
               </Link>
             </div>
           </div>
-          <div className="w-[120%] h-full absolute bottom-[-4.5rem] lg:left-1 z-10">
+          <div className="w-[120%] h-full absolute bottom-[-4.5rem] lg:left-1 z-10 contact-relax">
             <Image
               src="/images/profile-svg.png"
               fill={true}

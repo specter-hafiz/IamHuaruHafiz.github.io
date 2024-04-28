@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   useGSAP(() => {
@@ -42,14 +43,14 @@ export default function Projects() {
          md:rounded-b-[50px] rounded-[35px] p-4 ">
             <div className="w-full flex justify-between ">
              <h1 className="font-medium text-xl">Calcript</h1>
-              <div className="size-10 cursor-pointer bg-dark_violet/70 backdrop-blur-1 rounded-full flex items-center justify-center">
+              <Link href="https://github.com/IamHuaruHafiz/CalCript" className="size-10 cursor-pointer bg-dark_violet/70 backdrop-blur-1 rounded-full flex items-center justify-center">
                 <Image
                   src="/icons/arrow.svg"
                   width={30}
                   height={24}
                   alt="arrow"
                 />
-              </div>
+              </Link>
             </div>
             <p className="text-white/60 font-medium text-sm md:text-lg my-1">An intuitive Flutter calculator app designed <br /> for seamless mathematical calculations</p>
           </div>
@@ -67,14 +68,14 @@ export default function Projects() {
          md:rounded-b-[50px] rounded-[35px] p-4 ">
             <div className="w-full flex justify-between ">
              <h1 className="font-medium lg:text-xl">Dweather</h1>
-              <div className="size-10 cursor-pointer bg-dark_violet/70 backdrop-blur-1 rounded-full flex items-center justify-center">
+              <Link href="https://github.com/IamHuaruHafiz/Weather-App" className="size-10 cursor-pointer bg-dark_violet/70 backdrop-blur-1 rounded-full flex items-center justify-center">
                 <Image
                   src="/icons/arrow.svg"
                   width={30}
                   height={24}
                   alt="arrow"
                 />
-              </div>
+              </Link>
             </div>
             <p className="text-white/60 font-medium text-sm md:text-lg my-1">Flutter-based Wearther app delivering sleek and <br className="hidden lg:block"/> accurate weather forecasts at your fingertips.</p>
           </div>

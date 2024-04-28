@@ -13,7 +13,7 @@ const archivo = Archivo({
 
 
 export const metadata: Metadata = {
-  title: "Hafiz Muhammad Umer",
+  title: "Hafiz Huaru",
   description: "portfolio, mobile developer, flutter developer",
 };
 
