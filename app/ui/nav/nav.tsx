@@ -130,7 +130,7 @@ export default function Nav() {
           </div>
         </div>
     </div>
-    <div  id="nav-blur" className="navlinks w-screen navbar fixed z-[50] top-0 left-0 right-0 px-10 backdrop-blur-2xl opacity-0 ">
+    <div  id="nav-blur" className="navlinks w-screen h-[100vh] navbar fixed z-[70] top-0 left-0 right-0 px-10 backdrop-blur-2xl opacity-0 ">
       <ul className="w-full 2xl:max-w-screen-xl mx-auto pt-24 px-4 lg:px-10">
         <li onClick={()=>scrollToAction('home')} className="nav-text-1  opacity-0 text-2xl lg:text-3xxl font-medium cursor-pointer ">Home</li>
         <li onClick={()=>scrollToAction('projects')} className="nav-text-2  opacity-0 text-2xl lg:text-3xxl font-medium cursor-pointer">Projects</li>

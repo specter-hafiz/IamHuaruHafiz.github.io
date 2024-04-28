@@ -27,6 +27,11 @@ body::-webkit-scrollbar-thumb {
 nav{
   max-width: var(--ds-page-width);
 }
+
+#nav-blur{
+  -webkit-backdrop-filter: blur(30px); /* Add this line first, it fixes blur for Safari*/
+  backdrop-filter: blur(30px); 
+}
 .navbar {
   background: rgba(255, 255, 255, 0.081);
 
