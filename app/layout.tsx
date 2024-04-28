@@ -3,6 +3,7 @@ import { Archivo  } from "next/font/google"
 import "@styles/globals.css";
 import Nav from "./ui/nav/nav";
 import Cursor from "./ui/components/cursor/cursor";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Cursor/>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-PK5W6GWKLG"/>
     </html>
   );
 }
