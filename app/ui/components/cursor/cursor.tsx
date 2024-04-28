@@ -19,25 +19,36 @@ export default function Cursor() {
 
   const cursorRef = useRef<HTMLDivElement | null>(null); // Use useRef with null as initial value
   useEffect(() => {
-    const cursor = cursorRef.current; // Access cursor element safely
-    if (!cursor) return; // Handle potential null case gracefully
+    const cursor = cursorRef.current;
+    if (!cursor) return;
+
     const handleMouseMove = (e: MouseEvent) => {
-      cursor.style.left = e.pageX + 'px';
-      cursor.style.top = e.pageY + 'px';
+      const posX = e.clientX;
+      const posY = e.clientY;
+      cursor.style.left = posX + 'px';
+      cursor.style.top = posY + 'px';
     };
+
     const handleClick = () => {
-      setIsExpand(true)
+      setIsExpand(true);
       setTimeout(() => {
-        setIsExpand(false)
+        setIsExpand(false);
       }, 100);
     };
+
+    const handleScroll = () => {
+      // No need to update cursor position on scroll with this approach
+      // Cursor position will be automatically adjusted relative to the viewport
+    };
+
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('click', handleClick);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      // Cleanup function: Remove event listeners when component unmounts
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('click', handleClick);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

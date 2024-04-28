@@ -1,6 +1,6 @@
 "use client"
 
-import { gsap } from "gsap/dist/gsap";
+import  gsap  from "gsap";
 import { useGSAP } from "@gsap/react"
 
 

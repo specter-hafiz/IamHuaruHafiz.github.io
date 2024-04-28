@@ -12,6 +12,7 @@
 body {
   color: var(--color);
   background: var(--foreground-color);
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 15px;
@@ -31,7 +32,13 @@ nav{
 
 }
 
-
+.contact-box{
+  background: linear-gradient(311.97deg, #ffa51f 0%, #e93f0c 100%);
+}
+.contact-small-box{
+  background: rgba(255, 255, 255, .03);
+  border: 1px solid rgba(255, 255, 255, .1);
+}
 .navlinks{
   background:rgba(255, 255, 255, 0.081);
 

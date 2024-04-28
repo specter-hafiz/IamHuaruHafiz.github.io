@@ -5,6 +5,7 @@ import Nav from "./ui/nav/nav";
 import Cursor from "./ui/components/cursor/cursor";
 
 
+
 const archivo = Archivo({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
