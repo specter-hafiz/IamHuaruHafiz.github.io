@@ -38,7 +38,7 @@ export default function Projects() {
             className="object"
           />
           <div
-            className="w-[98%] md:w-[99%] absolute min-h-[30%] bg-gradient-to-b from-transparent to-white/60 backdrop-blur-[5px] bottom-1
+            className="w-[98%] project-blur md:w-[99%] absolute min-h-[30%] bg-gradient-to-b from-transparent to-white/60 backdrop-blur-[5px] bottom-1
          md:rounded-b-[50px] rounded-[35px] p-4 ">
             <div className="w-full flex justify-between ">
              <h1 className="font-medium text-xl">Calcript</h1>
@@ -63,7 +63,7 @@ export default function Projects() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div
-            className="w-[98%] md:w-[99%] absolute  min-h-[30%] bg-gradient-to-b from-transparent to-white/60 backdrop-blur-[5px] bottom-1
+            className="w-[98%] project-blur md:w-[99%] absolute  min-h-[30%] bg-gradient-to-b from-transparent to-white/60 backdrop-blur-[5px] bottom-1
          md:rounded-b-[50px] rounded-[35px] p-4 ">
             <div className="w-full flex justify-between ">
              <h1 className="font-medium lg:text-xl">Dweather</h1>
