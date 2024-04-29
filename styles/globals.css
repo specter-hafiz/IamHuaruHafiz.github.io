@@ -29,6 +29,7 @@ nav{
 }
 
 #nav-blur{
+  background: #09050f;
   -webkit-backdrop-filter: blur(30px); /* Add this line first, it fixes blur for Safari*/
   backdrop-filter: blur(30px); 
 }
